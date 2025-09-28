@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadar Balzam – Portfolio</title>
+    <!--
+      The main stylesheet defines the look and feel of this site. It
+      includes a responsive navigation bar, a hero section with a
+      decorative background image, and basic typography rules. See
+      styles.css in the same folder for details.
+    -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation bar with the site name and links to each section -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">Hadar&nbsp;Balzam</a>
+            <ul>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section with a background image and brief introduction -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome</h1>
+            <p>Hello! I’m Hadar Balzam, a software engineer and project owner. This site collects my résumé, a link to my GitHub account and highlights of projects I’ve worked on.</p>
+            <a href="#cv" class="btn">View my CV</a>
+        </div>
+    </section>
+
+    <!-- CV section – users can click to view the full CV page -->
+    <section id="cv" class="section">
+        <h2>Curriculum&nbsp;Vitae</h2>
+        <p>If you’d like to learn more about my professional background, skills and experience, please see the dedicated CV page.</p>
+        <a href="cv.html" class="btn secondary">Open CV</a>
+    </section>
+
+    <!-- GitHub section with a link to the user’s repository page -->
+    <section id="github" class="section">
+        <h2>GitHub</h2>
+        <p>I host much of my open source work on GitHub. You can explore my repositories, see what I’m currently working on and review past projects.</p>
+        <!-- Replace the href below with your actual GitHub profile URL if different -->
+        <a href="https://github.com/hadarbalzam" target="_blank" rel="noopener" class="btn">Visit my GitHub</a>
+    </section>
+
+    <!-- Projects section – a place to feature other notable work -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <!-- Individual project cards. Add as many as you like by copying this block and updating the content. -->
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>A short description of your first featured project. Explain what the project does, your role in building it and the technologies involved.</p>
+                <a href="#" class="btn small" target="_blank">Learn&nbsp;More</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>A short description of another project. Mention any interesting challenges you overcame or outcomes you achieved.</p>
+                <a href="#" class="btn small" target="_blank">Learn&nbsp;More</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>An optional third project. You can remove this or add additional cards depending on how many projects you wish to showcase.</p>
+                <a href="#" class="btn small" target="_blank">Learn&nbsp;More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer for copyright and contact information -->
+    <footer>
+        <p>&copy; <span id="year"></span> Hadar Balzam. All rights reserved.</p>
+    </footer>
+
+    <!-- A tiny script to update the year automatically -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
