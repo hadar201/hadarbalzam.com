@@ -14,7 +14,7 @@
   --color-text: #333333;           /* Default text colour */
   --color-light: #ffffff;          /* Light/white for text on dark backgrounds */
   --spacing-unit: 16px;            /* Base spacing for margins and padding */
-  --max-width: 1000px;             /* Constrain content width on large screens */
+  --max-width: 1200px;             /* Constrain content width on large screens */
   --border-radius: 4px;            /* Rounded corners */
 }
 
@@ -200,10 +200,9 @@ header nav ul li a:focus::after {
 
 /* Projects grid */
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: calc(var(--spacing-unit) * 2);
-  justify-content: center;
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -213,8 +212,6 @@ header nav ul li a:focus::after {
   border-radius: var(--border-radius);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: calc(var(--spacing-unit) * 2);
-  flex: 1 1 260px;
-  max-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -310,9 +307,9 @@ footer {
   header nav ul li a::after {
     bottom: -2px;
   }
+  /* Collapse projects grid to one column on narrow screens */
   .projects-grid {
-    flex-direction: column;
-    align-items: stretch;
+    grid-template-columns: 1fr;
   }
 }
 
