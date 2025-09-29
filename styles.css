@@ -315,3 +315,27 @@ footer {
     align-items: stretch;
   }
 }
+
+/* Grade tables for academic performance */
+.grades {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: calc(var(--spacing-unit) * 1);
+  margin-bottom: calc(var(--spacing-unit) * 1);
+}
+
+.grades th,
+.grades td {
+  border: 1px solid #e0e0e0;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.grades th {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.grades tr:nth-child(even) td {
+  background-color: #f7fbff;
+}
